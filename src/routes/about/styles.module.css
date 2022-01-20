@@ -1,0 +1,89 @@
+.gridLayout {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.gridLayout div {
+    height: 100%;
+}
+.gridLayout img {
+    width: 100%;
+    height: 100%;
+}
+.gridLayout .title {
+    color:rgba(221, 221, 221, 1);
+    font-family: 'Sedgwick Ave', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.gridLayout1 {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.gridLayout1 div {
+    height: 100%;
+}
+
+.gridLayout1 img {
+    width: 100%;
+    height: 100%;
+}
+.someText {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.8;
+    font-weight: 100;
+    font-size: 14px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 28px;
+}
+.someBigText {
+    color:rgba(221, 221, 221, 1);
+    font-family: 'Sedgwick Ave', cursive;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 34px;
+}
+
+@media screen and (max-width: 420px) {
+    .gridLayout {
+        display: block;
+        position: relative;
+    }
+    .gridLayout .itemText {
+        height: 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .gridLayout .title {
+        color: white;
+    }
+    .gridLayout .itemPhoto {
+        margin-top: 80px;
+        height: 400px;
+    }
+    .someText {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .someBigText {
+        padding: 20px;
+    }
+    .noMargin {
+        margin-bottom: 0px;
+    }
+}

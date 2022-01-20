@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    position: relative; 
+    background-color: #121214;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer div {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+@media screen and (max-width: 420px) {
+    .footer {
+        position: unset; 
+    }
+    .footer div {
+        font-size: 11px;
+    }
+}
