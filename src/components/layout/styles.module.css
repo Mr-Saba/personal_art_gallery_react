@@ -10,6 +10,7 @@
 @media screen and (max-width: 420px) {
     .layout {
         width: 100%;
+        max-width: 420px;
         position: inherit;
         left: 0;
         background-color: #121214;

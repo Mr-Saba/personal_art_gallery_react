@@ -1,9 +1,6 @@
 .relative {
     position: relative;
 }
-.layout img {
-    width: 100%;
-}
 .title {
     color: hsl(0, 100%, 100%);
     font-size: 50px;
@@ -95,6 +92,9 @@
 }
 
 @media screen and (max-width: 420px) {
+    .relative img {
+        width: 100%;
+    }
     .title {
         width: 100%;
         color: hsl(0, 100%, 100%);

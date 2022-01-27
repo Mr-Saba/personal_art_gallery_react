@@ -15,6 +15,10 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
 
+    const hideX = () => {
+        document.getElementById("x").style.display = ""
+    }
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -30,9 +34,10 @@ const Header = () => {
         }
     }
 
-
     return (
-        <div className={styles.header}>
+        <div 
+      
+        className={styles.header}>
             <div className={styles.logoArea}>
                 <Link onClick={() => scrollToTop()} to="/" className={styles.logo}>Logo</Link>
             </div>
@@ -41,10 +46,10 @@ const Header = () => {
                     <FontAwesomeIcon onClick={() => showList()} icon={faBars} />
                 </div>
                 <div id="x" className={styles.list}>
-                    <Link to="/about" className={styles.listItem}>ABOUT ME</Link>
-                    <Link to="/contact" className={styles.listItem}>CONTACT ME</Link>
-                    <Link to="/personal" className={styles.listItem}>PERSONAL</Link>
-                    <Link to="/illustrations" className={styles.listItem}>ILLUSTRATIONS</Link>
+                    <Link onClick={() => hideX()} to="/about" className={styles.listItem}>ABOUT ME</Link>
+                    <Link onClick={() => hideX()} to="/contact" className={styles.listItem}>CONTACT ME</Link>
+                    <Link onClick={() => hideX()} to="/personal" className={styles.listItem}>PERSONAL</Link>
+                    <Link onClick={() => hideX()} to="/illustrations" className={styles.listItem}>ILLUSTRATIONS</Link>
                 </div>
             </div>
             <ul className={styles.pageArea}>
