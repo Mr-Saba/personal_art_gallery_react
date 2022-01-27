@@ -2,17 +2,15 @@ import React from 'react';
 import styles from "./styles.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
+    faBars
+} from '@fortawesome/free-solid-svg-icons'
+import {
     faFacebookF,
     faTwitter,
     faInstagram,
     faTumblr,
-    
+    faWhatsapp
 } from '@fortawesome/free-brands-svg-icons'
-
-import { 
-    faBars
-} from '@fortawesome/free-solid-svg-icons'
-
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -68,8 +66,8 @@ const Header = () => {
                 <a className={styles.linksAreaItem} href="https://tumblr.com/" title="Tumblr">
                     <FontAwesomeIcon className={styles.fas} icon={faTumblr} />
                 </a>
-                <a className={styles.linksAreaItem} href="https://tumblr.com/" title="Search">
-                    <FontAwesomeIcon className={styles.fas} icon={faTwitter} />
+                <a className={styles.linksAreaItem} href="https://tumblr.com/" title="WhatsApp">
+                    <FontAwesomeIcon className={styles.fas} icon={faWhatsapp} />
                 </a>
             </div>
         </div>
