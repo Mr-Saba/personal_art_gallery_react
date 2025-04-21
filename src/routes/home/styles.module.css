@@ -89,7 +89,7 @@
     }
     .gridLayout img {
         width: 100%;
-        height: 350px;
+        height: 600px;
         transition: none;
         object-fit: cover;
     }
@@ -114,5 +114,12 @@
         width: 50%;
         height: 70px;
         margin-bottom: 0px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .gridLayout img {
+        height: 350px;
     }
 }
