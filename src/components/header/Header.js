@@ -39,7 +39,7 @@ const Header = () => {
       
         className={styles.header}>
             <div className={styles.logoArea}>
-                <Link onClick={() => scrollToTop()} to="/" className={styles.logo}>Logo</Link>
+                <Link onClick={() => scrollToTop()} to="/" className={styles.logo}>###</Link>
             </div>
             <div className={styles.barMenu}>
                 <div className={styles.bar}>

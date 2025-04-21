@@ -53,7 +53,7 @@ const Contact = () => {
   return (
     <>
       <div className={styles.relative}>
-          <img src={image18}/>
+          <img src={image18} className={styles.titleImg}/>
           <div className={styles.title}>Contact Me</div>
       </div>
       <div className={styles.someText}>
