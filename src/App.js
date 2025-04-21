@@ -6,9 +6,12 @@ import {
 } from "react-router-dom";
 import {Header, Layout, Footer} from "./components"
 import {Home, About, Contact, Personal, Illustrations} from "./routes"
+import useAppScale from './hooks/useAppScale'
 
 const App = () => {
-  
+
+  useAppScale()
+
   return (
     <div className='App'>
       <Header />

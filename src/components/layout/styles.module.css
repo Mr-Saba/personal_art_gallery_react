@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 .layout {
-    width: calc(100% - 250px);
+    width: calc(100% - calc(250px * var(--app-scale)));
     position: relative; 
-    left: 250px;
+    left: calc(250px * var(--app-scale));
     background-color: #121214;
     height: 100%;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 1000px) {
     .layout {
         width: 100%;
-        max-width: 420px;
+        max-width: 1000px;
+        min-height: 100vh;
         position: inherit;
         left: 0;
         background-color: #121214;

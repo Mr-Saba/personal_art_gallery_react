@@ -2,17 +2,17 @@
     width: 100%;
     position: relative; 
     background-color: #121214;
-    height: 120px;
+    height: calc(120px * var(--app-scale));
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .footer div {
     color: white;
-    font-size: 12px;
+    font-size: calc(12px * var(--app-scale));
     font-weight: 700;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 1000px) {
     .footer {
         position: unset; 
     }

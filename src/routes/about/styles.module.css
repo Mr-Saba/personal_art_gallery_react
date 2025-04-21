@@ -1,6 +1,6 @@
 .gridLayout {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: calc(10px * var(--app-scale));
     grid-template-columns: repeat(2, 1fr);
 }
 .gridLayout div {
@@ -9,6 +9,7 @@
 .gridLayout img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .gridLayout .title {
     color:rgba(221, 221, 221, 1);
@@ -16,11 +17,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: calc(50px * var(--app-scale));;
 }
 .gridLayout1 {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: calc(15px * var(--app-scale));
     grid-template-columns: repeat(3, 1fr);
 }
 .gridLayout1 div {
@@ -32,27 +33,27 @@
     height: 100%;
 }
 .someText {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: calc(40px * var(--app-scale));
+    margin-bottom: calc(40px * var(--app-scale));
     color: rgba(255, 255, 255, 1);
     opacity: 0.8;
     font-weight: 100;
-    font-size: 14px;
-    width: 600px;
+    font-size: calc(14px * var(--app-scale));;
+    width: calc(600px * var(--app-scale));;
     margin-left: auto;
     margin-right: auto;
-    line-height: 28px;
+    line-height: calc(28px * var(--app-scale));
 }
 .someBigText {
     color:rgba(221, 221, 221, 1);
     font-family: 'Sedgwick Ave', cursive;
-    width: 600px;
+    width: calc(600px * var(--app-scale));;
     margin-left: auto;
     margin-right: auto;
-    font-size: 34px;
+    font-size: calc(34px * var(--app-scale));;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 1000px) {
     .gridLayout {
         display: block;
         position: relative;
@@ -81,6 +82,7 @@
     }
     .someBigText {
         padding: 20px;
+        width: unset;
     }
     .noMargin {
         margin-bottom: 0px;

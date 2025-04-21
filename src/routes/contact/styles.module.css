@@ -14,13 +14,13 @@
     font-family: 'Sedgwick Ave', cursive;   
 }
 .someText {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: calc(40px * var(--app-scale));;;
+    margin-bottom: calc(40px * var(--app-scale));;;
     color: rgba(255, 255, 255, 1);
     opacity: 0.8;
     font-weight: 100;
-    font-size: 14px;
-    width: 600px;
+    font-size: calc(14px * var(--app-scale));;
+    width: calc(600px * var(--app-scale));;
     margin-left: auto;
     margin-right: auto;
     line-height: 28px;
@@ -28,30 +28,30 @@
 .someBigText {
     color:rgba(221, 221, 221, 1);
     font-family: 'Sedgwick Ave', cursive;
-    width: 600px;
+    width: calc(600px * var(--app-scale));;
     margin-left: auto;
     margin-right: auto;
-    font-size: 34px;
+    font-size: calc(34px * var(--app-scale));;
 }
 .form {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: calc(600px * var(--app-scale));;
     margin: 0 auto;
 }
 .form label {
     color: #4d4d4d;
-    font-size: 12px;
-    margin-bottom: 12px;
+    font-size: calc(12px * var(--app-scale));;
+    margin-bottom: calc(12px * var(--app-scale));;
 }
 .form input {
-    margin-bottom: 25px;
-    height: 60px;
+    margin-bottom: calc(25px * var(--app-scale));;;
+    height: calc(60px * var(--app-scale));
     background-color: #121214;
     border: 1px solid #4d4d4d;
     color: #a3a3a3;
-    padding: 20px;
-    font-size: 12px;
+    padding: calc(20px * var(--app-scale));
+    font-size: calc(12px * var(--app-scale));;
     font-weight: 700;
 }
 .form input:focus {
@@ -61,12 +61,12 @@
     color: #121214;
 }
 .form textarea {
-    margin-bottom: 25px;
+    margin-bottom: calc(25px * var(--app-scale));;;
     background-color: #121214;
     border: 1px solid #4d4d4d;
     color: #a3a3a3;
-    padding: 20px;
-    font-size: 12px;
+    padding: calc(20px * var(--app-scale));
+    font-size: calc(12px * var(--app-scale));;
     font-weight: 700;
 }
 .form textarea:focus {
@@ -76,32 +76,32 @@
     color: #121214;
 }
 .button {
-    width: 150px;
-    height: 50px;
+    width: calc(150px * var(--app-scale));
+    height: calc(50px * var(--app-scale));
     color: rgba(255, 255, 255, 1);
     background-color: hsl(250, 76%, 52%);
     border: none;
     cursor: pointer;
-    font-size: 13px;
+    font-size: calc(13px * var(--app-scale));
     letter-spacing: 0.5px;
     font-family: 'Sedgwick Ave', cursive;
-    margin-bottom: 25px;
+    margin-bottom: calc(25px * var(--app-scale));;;
 }
 .button:hover {
     transition: 0.7s;
-    transform: translate(0, -4px);
+    transform: translate(0, -2px);
     background-color:hsl(250, 68%, 56%);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.096) 0px 0px 0px 1px inset;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 1000px) {
     .relative img {
         width: 100%;
     }
     .title {
         width: 100%;
         color: hsl(0, 100%, 100%);
-        font-size: 40px;
+        font-size: calc(40px * var(--app-scale));
         position: absolute;    
         top: 50%;
         left: 50%;
@@ -111,22 +111,23 @@
     }
     .someText {
         width: 100%;
-        padding: 20px;
+        padding: calc(20px * var(--app-scale));
     }
     .someBigText {
-        padding: 20px;
+        padding: calc(20px * var(--app-scale));
+        width: unset;
     }
     .form {
         width: 100%;
-        padding: 20px;
+        padding: calc(20px * var(--app-scale));
     }
     .button {
-        font-size: 15px;
-        margin-top: 70px;
+        font-size: calc(15px * var(--app-scale));
+        margin-top: calc(70px * var(--app-scale));
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-        height: 70px;
+        height: calc(70px * var(--app-scale));
         margin-bottom: 0px;
     }
 }
