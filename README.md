@@ -1,1 +1,1 @@
-# Site URL: https://personal-gallery11.netlify.app/
+# Site URL: https://personal-portfolio-gallery.netlify.app/
